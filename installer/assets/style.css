@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+    margin: 100px;
+}
+
+form label, form input, form span {
+    display: block
+}
+
+form div {
+    margin-bottom: 50px;
+}
