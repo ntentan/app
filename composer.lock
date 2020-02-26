@@ -1,0 +1,658 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5e08b15d871e2134fcd50c7d0a7663fa",
+    "packages": [
+        {
+            "name": "monolog/monolog",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "c861fcba2ca29404dc9e617eedd9eff4616986b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c861fcba2ca29404dc9e617eedd9eff4616986b8",
+                "reference": "c861fcba2ca29404dc9e617eedd9eff4616986b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "psr/log": "^1.0.1"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "elasticsearch/elasticsearch": "^6.0",
+                "graylog2/gelf-php": "^1.4.2",
+                "jakub-onderka/php-parallel-lint": "^0.9",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpspec/prophecy": "^1.6.1",
+                "phpunit/phpunit": "^8.3",
+                "predis/predis": "^1.1",
+                "rollbar/rollbar": "^1.3",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "swiftmailer/swiftmailer": "^5.3|^6.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2019-12-20T14:22:59+00:00"
+        },
+        {
+            "name": "ntentan/atiaa",
+            "version": "v0.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ntentan/atiaa.git",
+                "reference": "2604fea83e9643adaa8d1fb65443fb214cfa60e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ntentan/atiaa/zipball/2604fea83e9643adaa8d1fb65443fb214cfa60e6",
+                "reference": "2604fea83e9643adaa8d1fb65443fb214cfa60e6",
+                "shasum": ""
+            },
+            "require": {
+                "ntentan/utils": "@stable",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phpunit/dbunit": "@stable",
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ntentan\\atiaa\\": "src/",
+                    "ntentan\\atiaa\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Ekow Abaka Ainooson",
+                    "email": "jainooson@gmail.com"
+                }
+            ],
+            "description": "A slim wrapper around PDO to provide some extra utilities",
+            "time": "2018-12-03T06:29:39+00:00"
+        },
+        {
+            "name": "ntentan/config",
+            "version": "v0.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ntentan/config.git",
+                "reference": "b7998cbf61475942990cd873bc1dedd6439a0ab5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ntentan/config/zipball/b7998cbf61475942990cd873bc1dedd6439a0ab5",
+                "reference": "b7998cbf61475942990cd873bc1dedd6439a0ab5",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ntentan\\config\\": "src/",
+                    "ntentan\\config\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ekow Abaka Ainooson",
+                    "email": "jainooson@gmail.com"
+                }
+            ],
+            "description": "Configurations manager for ntentan",
+            "time": "2017-09-17T14:10:38+00:00"
+        },
+        {
+            "name": "ntentan/honam",
+            "version": "v0.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ntentan/honam.git",
+                "reference": "25448e290effffb0a9aa83857acfccb8dfc6c7d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ntentan/honam/zipball/25448e290effffb0a9aa83857acfccb8dfc6c7d3",
+                "reference": "25448e290effffb0a9aa83857acfccb8dfc6c7d3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "ntentan/utils": "~0.9.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "@stable",
+                "mustache/mustache": "@stable",
+                "phpunit/phpunit": "@stable",
+                "smarty/smarty": "@stable"
+            },
+            "suggest": {
+                "mustache/mustache": "For mustache template support (2.*)",
+                "smarty/smarty": "For smarty template support (3.*)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ntentan\\honam\\": "src/",
+                    "ntentan\\honam\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ekow Abaka Ainooson",
+                    "email": "jainooson@gmail.com"
+                }
+            ],
+            "description": "The views component of the ntentan framework.",
+            "time": "2020-02-06T15:49:02+00:00"
+        },
+        {
+            "name": "ntentan/kaikai",
+            "version": "v0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ntentan/kaikai.git",
+                "reference": "15d5344365152aa94268c049dc5f9f64b0fd42e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ntentan/kaikai/zipball/15d5344365152aa94268c049dc5f9f64b0fd42e6",
+                "reference": "15d5344365152aa94268c049dc5f9f64b0fd42e6",
+                "shasum": ""
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "@stable",
+                "php-mock/php-mock-phpunit": "^2",
+                "phpunit/phpunit": "^6 <6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ntentan\\kaikai\\": "src/",
+                    "ntentan\\kaikai\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "ekow",
+                    "email": "your@email.here"
+                }
+            ],
+            "description": "Caching for Ntentan Framework",
+            "time": "2018-09-17T01:49:44+00:00"
+        },
+        {
+            "name": "ntentan/nibii",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ntentan/nibii.git",
+                "reference": "8bfdba3200719fcead98f0bfc30979fc53b25d4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ntentan/nibii/zipball/8bfdba3200719fcead98f0bfc30979fc53b25d4d",
+                "reference": "8bfdba3200719fcead98f0bfc30979fc53b25d4d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "ntentan/atiaa": "@stable",
+                "ntentan/kaikai": "@stable",
+                "ntentan/utils": "@stable"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ntentan\\nibii\\": "src/",
+                    "ntentan\\nibii\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ekow Abaka Ainooson",
+                    "email": "jainooson@gmail.com"
+                }
+            ],
+            "description": "ORM for ntentan",
+            "time": "2020-02-25T13:07:37+00:00"
+        },
+        {
+            "name": "ntentan/ntentan",
+            "version": "v0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ntentan/ntentan.git",
+                "reference": "a05aacc05130723b5ad2a7f030df63b1efd6c94c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ntentan/ntentan/zipball/a05aacc05130723b5ad2a7f030df63b1efd6c94c",
+                "reference": "a05aacc05130723b5ad2a7f030df63b1efd6c94c",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "@stable",
+                "ntentan/config": "@stable",
+                "ntentan/honam": "@stable",
+                "ntentan/kaikai": "@stable",
+                "ntentan/nibii": "@stable",
+                "ntentan/panie": "@stable",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ntentan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Ekow Abaka Ainooson",
+                    "email": "jainooson@gmail.com",
+                    "homepage": "http://ekowabaka.me"
+                }
+            ],
+            "description": "Another PHP application framework.",
+            "time": "2020-02-26T03:05:08+00:00"
+        },
+        {
+            "name": "ntentan/panie",
+            "version": "v0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ntentan/panie.git",
+                "reference": "cd014373566ff6b9c260cf4da315e56120dd740b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ntentan/panie/zipball/cd014373566ff6b9c260cf4da315e56120dd740b",
+                "reference": "cd014373566ff6b9c260cf4da315e56120dd740b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ntentan\\panie\\": "src/",
+                    "ntentan\\panie\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Ekow Abaka Ainooson",
+                    "email": "jainooson@gmail.com"
+                }
+            ],
+            "description": "A thin DI container for NtentanFX",
+            "time": "2018-12-03T02:49:40+00:00"
+        },
+        {
+            "name": "ntentan/utils",
+            "version": "v0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ntentan/utils.git",
+                "reference": "ecf00ff7cc956ab91b659dc289fed8c3a016fa40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ntentan/utils/zipball/ecf00ff7cc956ab91b659dc289fed8c3a016fa40",
+                "reference": "ecf00ff7cc956ab91b659dc289fed8c3a016fa40",
+                "shasum": ""
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "@stable",
+                "php-mock/php-mock-phpunit": "^2",
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ntentan\\utils\\": "src/",
+                    "ntentan\\utils\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ekow Abaka Ainooson",
+                    "email": "jainooson@gmail.com"
+                }
+            ],
+            "description": "Common utility functions shared accross the ntentan framework.",
+            "time": "2019-11-17T15:12:48+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2019-11-01T11:05:21+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "ekowabaka/clearice",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ekowabaka/clearice.git",
+                "reference": "8762c8a75e62df5c1a5505f2c78d6809ab5b3658"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ekowabaka/clearice/zipball/8762c8a75e62df5c1a5505f2c78d6809ab5b3658",
+                "reference": "8762c8a75e62df5c1a5505f2c78d6809ab5b3658",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "@stable",
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "clearice\\": "src/",
+                    "clearice\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Ekow Abaka Ainooson",
+                    "email": "jainooson@gmail.com",
+                    "homepage": "http://ekowabaka.me"
+                }
+            ],
+            "description": "A tool to help in the building of CLI apps. Provides command line parsing and simple console I/O interfaces.",
+            "time": "2019-03-24T13:49:18+00:00"
+        },
+        {
+            "name": "mustache/mustache",
+            "version": "v2.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/e95c5a008c23d3151d59ea72484d4f72049ab7f4",
+                "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~1.11",
+                "phpunit/phpunit": "~3.7|~4.0|~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "time": "2019-11-23T21:40:31+00:00"
+        },
+        {
+            "name": "ntentan/dev",
+            "version": "v0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ntentan/dev.git",
+                "reference": "5c8ab2595dce98565640fcf26f7c80fc79bbf092"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ntentan/dev/zipball/5c8ab2595dce98565640fcf26f7c80fc79bbf092",
+                "reference": "5c8ab2595dce98565640fcf26f7c80fc79bbf092",
+                "shasum": ""
+            },
+            "require": {
+                "ekowabaka/clearice": "@stable",
+                "mustache/mustache": "@stable",
+                "ntentan/panie": "@stable"
+            },
+            "bin": [
+                "bin/ntentan"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ntentan\\dev\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ekow Abaka Ainooson",
+                    "email": "jainooson@gmail.com"
+                }
+            ],
+            "description": "A dev tool for use with ntentan",
+            "time": "2019-01-10T09:42:10+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

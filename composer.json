@@ -1,0 +1,8 @@
+{
+    "require": {
+        "ntentan/ntentan": "^0.6.0"
+    },
+    "require-dev": {
+        "ntentan/dev": "^0.2.3"
+    }
+}
